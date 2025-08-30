@@ -1,7 +1,7 @@
 import express from "express";
-import { registerUser, loginUser } from "../controllers/authController.js";
+import {loginUser} from "../controllers/loginController.js"
 import { protect } from "../middleware/authMiddleware.js";
-
+import {registerUser} from "../controllers/registerController.js"
 const router = express.Router();
 
 // Public
